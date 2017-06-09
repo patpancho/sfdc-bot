@@ -17,7 +17,8 @@ let org = nforce.createConnection({
 
 let login = () => {
     org.authenticate({username: SF_USER_NAME, password: SF_PASSWORD}, err => {
-        if (err) {
+        console.log("Logging in to Salesforce");
+    	if (err) {
             console.error("Authentication error");
             console.error(err);
         } else {
