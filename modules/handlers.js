@@ -55,7 +55,7 @@ exports.priceChanges = (sender, values) => {
 
 exports.hi = (sender) => {
     messenger.getUserInfo(sender).then(response => {
-        messenger.send({text: `Hello, ${response.first_name}!`}, sender);
+        messenger.send({text: `Hello, ${response.first_name}! How can I help you?`}, sender);
     });
 };
 
